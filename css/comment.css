@@ -1,0 +1,16 @@
+#comment-list{
+    margin: 2rem auto;
+}
+
+.comment-card{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 26% 14% 10% 5% 5%;
+}
+
+.td{
+    height: 10rem;
+}
+
+.createdAt, .edit, .delete{
+    text-align: center;
+}

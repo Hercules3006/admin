@@ -1,0 +1,15 @@
+#location-list{
+    margin: 2rem auto;
+}
+.location-card{
+    display: grid;
+    grid-template-columns: 5% 15% 70% 5% 5%;
+}
+
+.image{
+    word-break: break-all;
+}
+
+.id, .price, .edit, .delete{
+    text-align: center;
+}

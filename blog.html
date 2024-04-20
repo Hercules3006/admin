@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourest - Admin</title>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+    <header class="header" data-header>
+        <div class="header-left">
+            <a href="#" class="header-logo"> Tourest </a>
+            <div>
+                <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu"
+                    onclick="document.querySelector('.header').classList.toggle('active')">
+                    <div class="open"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"></path>
+                        </svg> </div>
+                    <div class="close"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z">
+                            </path>
+                        </svg> </div>
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-logo"> Tourest </a>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./client.html">Client</a></li>
+                    <li> <a href="./destination.html"> Destination </a> </li>
+                    <li> <a class="link-active" href="./blog.html"> Blog </a> </li>
+                    <li> <a href="./comment.html"> Comment </a></li>
+                    <li> <a href="./order.html"> Order </a> </li>
+                    <li> <a href="./location.html"> Location </a> </li>
+                    <li> <a href="./category.html"> Category </a> </li>
+                </ul>
+                <div class="user-infor"></div>
+                <button class="btn logout-button" onclick="LogOut()"> Đăng xuất </button>
+                <button class="btn login-button" onclick="window.location.href='./login.html'"> Đăng nhập </button>
+            </nav>
+        </div>
+    </header>
+    <div class="header-margin"> </div>
+
+
+    <main>
+        <article>
+            <h1 class="title"> Blog </h1>
+            <div class="table" id="blog-list">
+                <ul class="tr blog-card">
+                    <li class="th h-id"> Id </li>
+                    <li class="th h-authorId"> Author Id </li>
+                    <li class="th h-title"> Title </li>
+                    <li class="th h-content"> Content </li>
+                    <li class="th h-image"> Image </li>
+                    <li class="th h-reactions"> Reactions </li>
+                    <li class="th h-createdAt"> Created At </li>
+                    <li class="th h-edit"> Edit </li>
+                    <li class="th h-delete"> Del </li>
+                    <ul>
+            </div>
+            <a href="form.html?type=blog&method=add" class="addMethod"> + </a>
+        </article>
+    </main>
+
+    <script src="./js/reused.js"></script>
+    <script src="./js/load-user.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>

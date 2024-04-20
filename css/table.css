@@ -1,0 +1,63 @@
+.title{
+    margin: 2rem 2.5%;
+}
+
+.table {
+    width: 95%;
+    box-shadow: 0 0 0.5rem rgb(0,0,0,0.2);
+}
+
+.table .th{
+    background-color: var(--orange-color);
+    padding: 0.5rem 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: 0.05rem solid #ffffff;
+}
+
+.table .td{
+    border: 0.05rem solid #e8e8e8;
+    padding: 0.5rem;
+    overflow-y: auto; 
+    word-break: break-all;
+    max-height: 10rem;
+    text-align: center;
+}
+
+.table .tr:nth-child(even){
+    background-color: #f3f1f1;
+}
+.table .tr:nth-child(odd){
+    background-color: #ffede0;
+}
+
+.table .edit a{
+    color: var(--orange-color);
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+.table .delete button{
+    color: var(--red-color);
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1.5vw, 1.4rem);
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.addMethod{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--orange-color);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,8 @@
+#admin-list{
+    margin: 2rem auto;
+}
+
+.admin-card{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 20% 10% 10% 10% 10% 5% 5%;
+}

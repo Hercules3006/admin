@@ -1,0 +1,15 @@
+#destination-list{
+    margin: 2rem auto;
+}
+.destination-card{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 10% 10% 25% 20% 5% 5% 5% 5%;
+}
+
+.image{
+    word-break: break-all;
+}
+
+.id, .price, .edit, .delete{
+    text-align: center;
+}
